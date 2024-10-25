@@ -6,7 +6,7 @@ const NavBar = () => {
 
   
   return (
-    <div className='flex justify-between items-center py-5 px-10 shadow md:shadow-none items-center'>
+    <div className='flex justify-between items-center py-5 px-8 md:px-20 shadow md:shadow-none items-center'>
       <div>
         <h1 className='text-2xl font-bold'>The<span className='text-green-400'>Kitchen</span></h1>
       </div>
