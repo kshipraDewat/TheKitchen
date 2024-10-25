@@ -1,12 +1,13 @@
 
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { GlobalContext } from '../Context';
 import RecipeItem from '../components/RecipeItem';
 
 const Favourites = () => {
   
   
-  const {favouritesList} = useContext(GlobalContext);
+  const {favouritesList,setFavouritesList} = useContext(GlobalContext);
+
   
   return (
     <div className='py-10 container mx-auto flex flex-wrap justify-center gap-10'>
