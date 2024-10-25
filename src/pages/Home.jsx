@@ -27,7 +27,7 @@ const Home = () => {
       {recipeList && recipeList.length > 0 ? 
       recipeList.map((item)=> <RecipeItem item={item} />)
       : <div className='flex flex-col items-center gap-5'>
-        <img src={img} alt="" className='relative  w-[90vw] h-[40vh] md:h-[70vh] rounded-lg  ' />
+        <img src={img} alt="" className='relative  w-[90vw] h-[40vh] md:h-[60vh] rounded-lg  ' />
         <div>
          
         </div>

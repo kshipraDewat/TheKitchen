@@ -29,9 +29,18 @@ export const ContextProvider =(props)=>{
     }
 
     function handleAddToFav(getCurrentItem){
-
+      let cpyFavoritesList = [...favouritesList];
+      const index = cpyFavoritesList.findIndex(item=> item.id === getCurrentItem.id)
+  
+      if(index === -1) {
+        cpyFavoritesList.push(getCurrentItem);
+      } 
+      else {
+        cpyFavoritesList.splice(index)
+      }
+  
+      setFavouritesList(cpyFavoritesList)
     }
-
     return(
         <GlobalContext.Provider value={{ searchParam,loading, recipeList,recipeDetailsData, setRecipeDetailsData, setSearchParam,handleSubmit,handleAddToFav,favouritesList }}>
           {props.children}
